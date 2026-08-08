@@ -415,9 +415,9 @@ screenshots/
 Then add your images like this:
 
 ``` markdown
-![Home Page](screenshots/01.png)
+![Home Page](/screenshots/01.png)
 
-![Prediction Interface](screenshots/02.png)
+![Prediction Interface](/screenshots/02.png)
 ```
 
 ------------------------------------------------------------------------
