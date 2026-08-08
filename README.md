@@ -21,7 +21,7 @@ Training → Model Evaluation → Flask Prediction App**
 
 ## 🚀 Live Demo
 
-🔗 **Live Application:** `ADD_YOUR_DEPLOYED_LINK_HERE`
+🔗 **Live View** `https://www.linkedin.com/posts/rohitkumar2428_student-performance-prediction-system-activity-7449660238988853248-Vz1d?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFySLZUBdGjRuzt_vW2Y9QUYRGnm_FYxyq8`
 
 📦 **GitHub Repository:**  
 <https://github.com/rohit-thecoder/Student---Performance---System>
@@ -415,11 +415,9 @@ screenshots/
 Then add your images like this:
 
 ``` markdown
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/01.png)
 
-![Prediction Interface](screenshots/prediction.png)
-
-![Prediction Result](screenshots/result.png)
+![Prediction Interface](screenshots/02.png)
 ```
 
 ------------------------------------------------------------------------
