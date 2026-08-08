@@ -343,8 +343,7 @@ Configuration-driven workflow
 
 1. Clone the repository
 
-git clone https://github.com/rohit-thecoder/Student---Performance---System
-cd YOUR_REPOSITORY
+git clone https://github.com/rohit-thecoder/mlproject
 
 Replace the repository URL with your actual GitHub repository URL.
 
@@ -561,7 +560,7 @@ B.Tech Computer Science & Engineering StudentMachine Learning & AI Enthusiast
 
 Connect With Me
 
-LinkedIn: https://www.linkedin.com/in/rohitkumar242
+LinkedIn: https://www.linkedin.com/in/rohitkumar2428
 
 GitHub: https://github.com/rohit-thecoder
 
@@ -573,5 +572,6 @@ If you found this project useful or interesting, consider giving therepository a
 
 📄 License
 
-This project is available for educational and learning purposes. You maymodify and extend it for your own projects and experimentation.#   S t u d e n t - - - P e r f o r m a n c e - - - S y s t e m  
+This project is available for educational and learning purposes. You maymodify and extend it for your own projects and experimentation.#   S t u d e n t - - - P e r f o r m a n c e - - - S y s t e m 
+ 
  
