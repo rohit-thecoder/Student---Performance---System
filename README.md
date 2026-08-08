@@ -21,7 +21,15 @@ Training → Model Evaluation → Flask Prediction App**
 
 ## 🚀 Live Demo
 
-🔗 **Live View** `https://www.linkedin.com/posts/rohitkumar2428_student-performance-prediction-system-activity-7449660238988853248-Vz1d?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFySLZUBdGjRuzt_vW2Y9QUYRGnm_FYxyq8`
+## 🖼️ Screenshots
+
+### 🏠 ML Project
+
+![ML Project](screenshots/02.png)
+
+### 🔮 Prediction Interface
+
+![Prediction Result](screenshots/01.png)
 
 📦 **GitHub Repository:**  
 <https://github.com/rohit-thecoder/Student---Performance---System>
@@ -399,20 +407,7 @@ The exact prediction depends on the trained model.
 > This prediction is a Machine Learning estimate and should not be
 > treated as an official academic assessment.
 
-------------------------------------------------------------------------
-
-## 🖼️ Screenshots
-
-
-## 🖼️ Screenshots
-
-### 🏠 ML Project
-
-![ML Project](screenshots/02.png)
-
-### 🔮 Prediction Interface
-
-![Prediction Interface](screenshots/01.png)
+-----------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------
