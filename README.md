@@ -403,22 +403,17 @@ The exact prediction depends on the trained model.
 
 ## 🖼️ Screenshots
 
-Create a `screenshots` folder in the repository:
 
-``` text
-screenshots/
-├── home.png
-├── prediction.png
-└── result.png
-```
+## 🖼️ Screenshots
 
-Then add your images like this:
+### 🏠 ML Project
 
-``` markdown
-![ML Project](screenshots/ml-project.png)
+![ML Project](screenshots/02.png)
 
-![Prediction Interface](screenshots/02.png)
-```
+### 🔮 Prediction Interface
+
+![Prediction Interface](screenshots/01.png)
+
 
 ------------------------------------------------------------------------
 
