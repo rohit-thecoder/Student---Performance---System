@@ -1,180 +1,206 @@
-🎓 Student Performance Prediction System
+# 🎓 Student Performance Prediction System
 
-An end-to-end Machine Learning application that predicts a student'sMathematics Score using academic, demographic, and social factors.
+## End-to-End Machine Learning Project with Flask
 
-This project goes beyond model training by implementing a complete,modular ML workflow including data ingestion, data validation, datatransformation, model training, artifact management, and web-basedprediction.
+[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Web_App-black?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine_Learning-orange?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data_Processing-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 
-🚀 Project Overview
+A complete Machine Learning application that predicts a student's
+**Mathematics Score** using academic, demographic, and social factors.
 
-The Student Performance Prediction System takes student-relatedinformation as input and predicts the expected Mathematics score using atrained Machine Learning model.
+This project goes beyond model training by implementing a structured ML
+workflow:
 
-The project is designed using a production-oriented structure so thatindividual stages of the ML workflow remain modular, reusable, andeasier to maintain.
+**Data Ingestion → Data Validation → Data Transformation → Model
+Training → Model Evaluation → Flask Prediction App**
 
-What the application does
+------------------------------------------------------------------------
 
-Accepts student information through a web interface.
+## 🚀 Live Demo
 
-Processes categorical and numerical features.
+🔗 **Live Application:** `ADD_YOUR_DEPLOYED_LINK_HERE`
 
-Applies the same preprocessing pipeline used during training.
+📦 **GitHub Repository:**  
+<https://github.com/rohit-thecoder/Student---Performance---System>
 
-Loads the trained ML model.
+------------------------------------------------------------------------
 
-Generates a Mathematics Score prediction.
+## 📌 About the Project
 
-Displays the prediction through a user-friendly web interface.
+The **Student Performance Prediction System** takes student information
+as input and predicts the expected Mathematics Score using a trained
+Machine Learning model.
 
-✨ Key Features
+The project follows a modular architecture where data processing, model
+training, logging, exception handling, and prediction are separated into
+different components.
 
-📊 End-to-end Machine Learning pipeline
+### What the application does
 
-🧹 Automated data ingestion and preprocessing
+1.  Collects student information through a web form.
+2.  Processes categorical and numerical features.
+3.  Applies the saved preprocessing pipeline.
+4.  Loads the trained Machine Learning model.
+5.  Generates the predicted Mathematics Score.
+6.  Displays the result through a Flask web interface.
 
-🔍 Data validation before model training
+------------------------------------------------------------------------
 
-⚙️ Reusable data transformation pipeline
+## ✨ Features
 
-🤖 Automated model training and evaluation
+- 🎯 Mathematics Score prediction
+- 🧠 Machine Learning based prediction
+- 📊 Numerical and categorical feature processing
+- 🔄 End-to-end ML pipeline
+- 🧪 Reproducible train-test split
+- 💾 Saved model and preprocessing artifacts
+- 🌐 Flask web application
+- 🎨 User-friendly HTML interface
+- 📝 Centralized logging
+- ⚠️ Custom exception handling
+- 🐳 Docker support
+- 📁 Modular project structure
 
-💾 Model and preprocessor artifact storage
+------------------------------------------------------------------------
 
-🌐 Flask-based prediction application
+## 📊 Dataset
 
-🎨 HTML/CSS frontend
+The project uses a student performance dataset containing academic,
+demographic, and social information.
 
-📦 Modular and scalable project architecture
+### Input Features
 
-🐳 Docker support
+| Feature                     | Description                     | Type        |
+|-----------------------------|---------------------------------|-------------|
+| Gender                      | Student's gender                | Categorical |
+| Race/Ethnicity              | Student's ethnicity group       | Categorical |
+| Parental Level of Education | Parent/guardian education level | Categorical |
+| Lunch                       | Type of lunch received          | Categorical |
+| Test Preparation Course     | Test preparation status         | Categorical |
+| Reading Score               | Student's reading score         | Numerical   |
+| Writing Score               | Student's writing score         | Numerical   |
 
-📝 Logging and custom exception handling
+### 🎯 Target Variable
 
-🔁 Reproducible train-test split
+**Math Score**
 
-🧩 Configuration-driven ML workflow
+The trained model uses the input features above to estimate the
+student's Mathematics Score.
 
-📊 Dataset
+------------------------------------------------------------------------
 
-The project is based on a student performance dataset containingacademic, demographic, and social attributes.
+## 🧠 Machine Learning Pipeline
 
-Input Features
+``` text
+┌─────────────────┐
+│   Raw Dataset   │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ Data Ingestion  │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ Data Validation │
+└────────┬────────┘
+         ↓
+┌──────────────────┐
+│ Data Transformation│
+└────────┬─────────┘
+         ↓
+┌─────────────────┐
+│ Model Training  │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ Model Evaluation│
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│   model.pkl     │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ Flask Web App   │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│    Prediction   │
+└─────────────────┘
+```
 
-Feature                 Description             Type
+------------------------------------------------------------------------
 
-Gender                  Student gender          Categorical
+## 🔍 Workflow
 
-Race/Ethnicity          Student's ethnicity     Categoricalgroup
-
-Parental Level of       Parent/guardian         CategoricalEducation               education level
-
-Lunch                   Type of lunch received  Categorical
-
-Test Preparation Course Whether the student     Categoricalcompleted testpreparation
-
-Reading Score           Student's reading score Numerical
-
-Writing Score           Student's writing score Numerical
-
-Target Variable
-
-Math Score
-
-The trained model uses the input features above to estimate thestudent's Mathematics Score.
-
-🧠 Machine Learning Workflow
-
-The project follows a structured ML pipeline:
-
-Raw Dataset
-     │
-     ▼
-Data Ingestion
-     │
-     ▼
-Data Validation
-     │
-     ▼
-Data Transformation
-     │
-     ▼
-Model Training
-     │
-     ▼
-Model Evaluation
-     │
-     ▼
-Model Artifact (.pkl)
-     │
-     ▼
-Flask Application
-     │
-     ▼
-User Input
-     │
-     ▼
-Prediction
-
-1. Data Ingestion
+### 1. Data Ingestion
 
 The dataset is loaded and divided into training and testing datasets.
 
-Generated artifacts include:
+Generated files:
 
-train.csv
+``` text
+artifacts/
+├── train.csv
+└── test.csv
+```
 
-test.csv
+### 2. Data Validation
 
-These files are stored inside the artifacts directory.
+The validation stage checks whether the dataset follows the expected
+structure and schema before further processing.
 
-2. Data Validation
+### 3. Data Transformation
 
-The validation stage checks whether the incoming dataset follows theexpected structure and schema.
+The transformation stage prepares the data for Machine Learning.
 
-This helps prevent unexpected data issues from reaching later stages ofthe pipeline.
+It handles:
 
-3. Data Transformation
+- Categorical features
+- Numerical features
+- Feature preprocessing
+- Transformation required by the ML models
 
-The transformation stage prepares the dataset for Machine Learning.
+The fitted preprocessing pipeline is saved as:
 
-Typical operations include:
-
-Handling categorical variables
-
-Encoding categorical features
-
-Processing numerical features
-
-Applying preprocessing consistently
-
-Preparing the final feature matrix
-
-The fitted preprocessing object is saved as:
-
+``` text
 preprocessor.pkl
+```
 
-4. Model Training
+### 4. Model Training
 
 The transformed training data is passed to the model training stage.
 
-The trained model is serialized and stored as:
+The trained model is saved as:
 
+``` text
 model.pkl
+```
 
-This allows the web application to load the trained model withoutretraining it for every prediction.
-
-5. Prediction
+### 5. Prediction
 
 When a user submits the form:
 
-The Flask application receives the input.
+``` text
+User Input
+    ↓
+Flask Application
+    ↓
+Saved Preprocessor
+    ↓
+Trained ML Model
+    ↓
+Predicted Math Score
+```
 
-The saved preprocessor transforms the input.
+------------------------------------------------------------------------
 
-The saved model generates a prediction.
+## 🏗️ Project Structure
 
-The predicted Mathematics Score is returned to the user.
-
-🏗️ Project Structure
-
+``` text
 MLPROJECT/
 │
 ├── artifacts/
@@ -217,268 +243,142 @@ MLPROJECT/
 ├── README.md
 ├── requirements.txt
 └── setup.py
+```
 
-📁 Important Files and Their Responsibilities
+------------------------------------------------------------------------
 
-application.py
+## 🧩 Important Files
 
-Main Flask application responsible for:
+| File                     | Responsibility                                  |
+|--------------------------|-------------------------------------------------|
+| `application.py`         | Flask application, routes, and prediction logic |
+| `data_ingestion.py`      | Loads dataset and creates train/test data       |
+| `data_transformation.py` | Data preprocessing and transformation           |
+| `model_trainer.py`       | Model training and evaluation                   |
+| `exception.py`           | Custom exception handling                       |
+| `logger.py`              | Centralized logging                             |
+| `utils.py`               | Reusable utility functions                      |
+| `model.pkl`              | Serialized trained ML model                     |
+| `preprocessor.pkl`       | Serialized preprocessing pipeline               |
+| `home.html`              | Main frontend page                              |
+| `index.html`             | Prediction interface                            |
 
-Starting the web server
+------------------------------------------------------------------------
 
-Rendering frontend pages
+## 🛠️ Tech Stack
 
-Receiving user input
+### Programming Language
 
-Calling the prediction pipeline
+- Python
 
-Returning prediction results
+### Data Science & Machine Learning
 
-src/components/data_ingestion.py
+- NumPy
+- Pandas
+- Scikit-learn
+- CatBoost
 
-Responsible for:
+### Web Development
 
-Loading the dataset
+- Flask
+- HTML
+- CSS
 
-Creating train/test splits
+### Tools & Deployment
 
-Saving processed datasets to the artifacts directory
+- Git
+- GitHub
+- Docker
+- Python Virtual Environment
 
-src/components/data_transformation.py
+------------------------------------------------------------------------
 
-Responsible for:
+## ⚙️ Installation & Setup
 
-Feature preprocessing
+### 1. Clone the Repository
 
-Categorical encoding
+``` bash
+git clone https://github.com/rohit-thecoder/Student---Performance---System.git
+cd Student---Performance---System
+```
 
-Numerical feature processing
+### 2. Create a Virtual Environment
 
-Creating and saving the preprocessing pipeline
+#### Windows
 
-src/components/model_trainer.py
-
-Responsible for:
-
-Training Machine Learning models
-
-Evaluating models
-
-Selecting the best-performing model
-
-Saving the trained model
-
-src/pipeline/exception.py
-
-Contains custom exception handling used throughout the project.
-
-src/pipeline/logger.py
-
-Provides centralized logging functionality for tracking pipelineexecution and errors.
-
-src/pipeline/utils.py
-
-Contains reusable utility functions used across different parts of theproject.
-
-templates/
-
-Contains the HTML templates used by the Flask application.
-
-artifacts/
-
-Stores generated ML artifacts such as:
-
-model.pkl
-preprocessor.pkl
-train.csv
-test.csv
-
-🛠️ Tech Stack
-
-Programming Language
-
-Python
-
-Data Science & Machine Learning
-
-NumPy
-
-Pandas
-
-Scikit-learn
-
-CatBoost
-
-Web Development
-
-Flask
-
-HTML
-
-CSS
-
-Development & Deployment
-
-Git
-
-GitHub
-
-Docker
-
-Virtual Environment
-
-Project Engineering
-
-Modular Python architecture
-
-Logging
-
-Custom exception handling
-
-Serialized ML artifacts
-
-Configuration-driven workflow
-
-⚙️ Installation & Setup
-
-1. Clone the repository
-
-git clone https://github.com/rohit-thecoder/Student---Performance---System
-cd YOUR_REPOSITORY
-
-Replace the repository URL with your actual GitHub repository URL.
-
-2. Create a virtual environment
-
-Windows
-
+``` bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-macOS / Linux
+#### macOS / Linux
 
+``` bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
-3. Install dependencies
+### 3. Install Dependencies
 
+``` bash
 pip install -r requirements.txt
+```
 
-4. Run the application
+### 4. Run the Application
 
+``` bash
 python application.py
+```
 
-The Flask application will start locally.
+Open the application in your browser:
 
-Open the URL shown in your terminal, commonly:
-
+``` text
 http://127.0.0.1:5000/
+```
 
-🐳 Run with Docker
+------------------------------------------------------------------------
+
+## 🐳 Docker Deployment
 
 Build the Docker image:
 
+``` bash
 docker build -t student-performance-prediction .
+```
 
 Run the container:
 
+``` bash
 docker run -p 5000:5000 student-performance-prediction
+```
 
 Then open:
 
+``` text
 http://localhost:5000/
+```
 
-📈 Model Training
+------------------------------------------------------------------------
 
-The project separates data processing and model training from theprediction application.
+## 📦 Model Artifacts
 
-A typical training workflow is:
+The training pipeline generates reusable artifacts.
 
-Dataset
-   ↓
-Data Ingestion
-   ↓
-Train/Test Split
-   ↓
-Data Transformation
-   ↓
-Model Training
-   ↓
-Model Evaluation
-   ↓
-Best Model
-   ↓
-model.pkl
+| Artifact           | Purpose                                   |
+|--------------------|-------------------------------------------|
+| `model.pkl`        | Stores the trained Machine Learning model |
+| `preprocessor.pkl` | Stores the fitted preprocessing pipeline  |
+| `train.csv`        | Training dataset                          |
+| `test.csv`         | Testing dataset                           |
 
-The saved model can then be reused by the Flask application forpredictions.
+The saved artifacts allow the Flask application to make predictions
+without retraining the model for every request.
 
-🔐 Reproducibility
+------------------------------------------------------------------------
 
-The project uses a reproducible train-test split so that experiments canbe repeated consistently.
+## 🧪 Example Input
 
-The preprocessing pipeline is also saved along with the trained model.This is important because prediction-time data must undergo the sametransformations that were applied to the training data.
-
-🌐 Application Interface
-
-The web application provides a simple interface where users can enterstudent information and receive a predicted Mathematics Score.
-
-Prediction Flow
-
-User
- │
- ▼
-HTML Form
- │
- ▼
-Flask Backend
- │
- ▼
-Input Processing
- │
- ▼
-Saved Preprocessor
- │
- ▼
-Saved ML Model
- │
- ▼
-Predicted Math Score
- │
- ▼
-Result Display
-
-📸 Screenshots
-
-Add your application screenshots here after uploading them to yourGitHub repository.
-
-Example:
-
-
-
-Recommended screenshots:
-
-Home page
-
-Prediction form
-
-Prediction result
-
-Project folder structure
-
-Model training output
-
-📂 Generated Artifacts
-
-The training pipeline generates reusable artifacts:
-
-Artifact             Purpose
-
-model.pkl          Stores the trained Machine Learning modelpreprocessor.pkl   Stores the fitted preprocessing pipelinetrain.csv          Training dataset splittest.csv           Testing dataset split
-
-🧪 Example Prediction
-
-A user can provide values such as:
-
+``` text
 Gender: Female
 Race/Ethnicity: Group B
 Parental Education: Bachelor's Degree
@@ -486,93 +386,116 @@ Lunch: Standard
 Test Preparation: Completed
 Reading Score: 72
 Writing Score: 74
+```
 
-The application processes these values and returns the predictedMathematics Score.
+### Example Output
 
-The prediction is generated by the trained model and should be treatedas a model estimate, not an official academic assessment.
+``` text
+Predicted Mathematics Score: XX.XX
+```
 
-📚 What I Learned
+The exact prediction depends on the trained model.
 
-Building this project helped me understand how a Machine Learning modelcan be converted into a complete application.
+> This prediction is a Machine Learning estimate and should not be
+> treated as an official academic assessment.
 
-Key learnings include:
+------------------------------------------------------------------------
 
-Designing modular ML projects
+## 🖼️ Screenshots
 
-Data ingestion and validation
+Create a `screenshots` folder in the repository:
 
-Feature preprocessing
+``` text
+screenshots/
+├── home.png
+├── prediction.png
+└── result.png
+```
 
-Training and evaluating ML models
+Then add your images like this:
 
-Saving and loading trained models
+``` markdown
+![Home Page](screenshots/home.png)
 
-Building reusable ML pipelines
+![Prediction Interface](screenshots/prediction.png)
 
-Flask application development
+![Prediction Result](screenshots/result.png)
+```
 
-Connecting frontend forms with ML predictions
+------------------------------------------------------------------------
 
-Logging and exception handling
+## 📈 Why This Project?
 
-Managing project dependencies
+The goal of this project was not just to train a Machine Learning model.
 
-Dockerizing an ML application
+It was to understand how a real ML application can be structured from
+**raw data to deployment**.
 
-Structuring code for maintainability
+``` text
+Machine Learning
+       +
+Software Engineering
+       +
+Web Development
+       +
+Docker
+       ↓
+Complete ML Application
+```
 
-🔮 Future Improvements
+------------------------------------------------------------------------
 
-Possible improvements for future versions include:
+## 📚 What I Learned
 
-Add model performance metrics to the UI
+This project helped me gain practical experience with:
 
-Add prediction confidence or error estimates where appropriate
+- End-to-end Machine Learning workflows
+- Data ingestion and validation
+- Data preprocessing
+- Model training and evaluation
+- Model serialization
+- Modular Python architecture
+- Flask application development
+- Frontend-backend integration
+- Logging
+- Custom exception handling
+- Docker
+- Git and GitHub
+- Deployable Machine Learning applications
 
-Add interactive data visualizations
+------------------------------------------------------------------------
 
-Add model comparison dashboard
+## 🔮 Future Improvements
 
-Add database support for prediction history
+- [ ] Add model performance metrics to the UI
+- [ ] Add data visualizations
+- [ ] Add prediction history
+- [ ] Add REST API endpoints
+- [ ] Improve responsive UI
+- [ ] Add automated testing
+- [ ] Add CI/CD pipeline
+- [ ] Add model monitoring
+- [ ] Add cloud deployment
 
-Add REST API endpoints
+------------------------------------------------------------------------
 
-Improve frontend styling and responsiveness
+## 👨‍💻 Author
 
-Add automated testing
+### Rohit Kumar
 
-Add CI/CD pipeline
+**B.Tech CSE \| Machine Learning & AI Enthusiast**
 
-Deploy the application to a cloud platform
-
-🎯 Project Goals
-
-This project was built to demonstrate practical understanding of:
-
-Machine Learning + Software Engineering + Web Development +Deployment
-
-Rather than creating only a Jupyter Notebook model, the goal was tobuild a complete workflow from raw data to a usable predictionapplication.
-
-👨‍💻 Author
-
-Rohit Kumar
-
-B.Tech Computer Science & Engineering StudentMachine Learning & AI Enthusiast
-
-Connect With Me
-
-LinkedIn: https://www.linkedin.com/in/rohitkumar2428
-
-GitHub: https://github.com/rohit-thecoder
+- GitHub: <https://github.com/rohit-thecoder>
+- LinkedIn: `https://www.linkedin.com/in/rohitkumar2428`
 
 
+------------------------------------------------------------------------
 
-⭐ Support
+## ⭐ Support
 
-If you found this project useful or interesting, consider giving therepository a ⭐ on GitHub.
+If you found this project useful, consider giving the repository a ⭐ on
+GitHub.
 
-📄 License
+------------------------------------------------------------------------
 
-This project is available for educational and learning purposes. You maymodify and extend it for your own projects and experimentation.#   S t u d e n t - - - P e r f o r m a n c e - - - S y s t e m 
- 
- 
+### Built with Python, Machine Learning & Flask ❤️
